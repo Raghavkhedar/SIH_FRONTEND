@@ -1,11 +1,12 @@
-import React from 'react'
-
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
 
 import './hero.css'
 
 const Hero = (props) => {
+  
   return (
     <div className="hero-header78">
       <div className="hero-column thq-section-padding thq-section-max-width">
@@ -14,11 +15,17 @@ const Hero = (props) => {
           <p className="hero-text2 thq-body-large">{props.content1}</p>
         </div>
         <div className="hero-actions">
-          <button className="thq-button-filled hero-button1">
-            <span className="thq-body-small">{props.action1}</span>
+          
+          <button  className="thq-button-filled hero-button1">
+            <Link to="/form">
+             <span  className="thq-body-small">{props.action1}</span>
+            </Link>
           </button>
+          
           <button className="thq-button-outline hero-button2">
+        
             <span className="thq-body-small">{props.action2}</span>
+          
           </button>
         </div>
       </div>

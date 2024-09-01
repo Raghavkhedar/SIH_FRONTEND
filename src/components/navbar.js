@@ -1,8 +1,8 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
 
 import './navbar.css'
+
 
 const Navbar = (props) => {
   return (
@@ -22,7 +22,9 @@ const Navbar = (props) => {
             <span className="thq-link thq-body-small">{props.link5}</span>
           </nav>
           <div className="navbar-buttons1">
-            <button className="navbar-action11 thq-button-filled thq-button-animated">
+            <button className="navbar-action11 thq-button-filled thq-button-animated"
+            onClick={props.onLoginClick}
+            >
               <span className="thq-body-small">Login</span>
             </button>
             <button className="navbar-action21 thq-button-outline thq-button-animated">

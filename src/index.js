@@ -10,6 +10,8 @@ import {
 import './style.css'
 // import NotFound1, { NotFound } from './views/not-found'
 import Home from './views/home'
+import FormComponent from './components/FormComponent';
+
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
       <Switch>
         {/* <Route component={NotFound1} exact path="/not-found" /> */}
         <Route component={Home} exact path="/" />
+        
+        <Route path="/form" component={FormComponent} />
         {/* <Route component={NotFound} path="**" /> */}
         <Redirect to="**" />
       </Switch>

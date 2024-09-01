@@ -1,7 +1,54 @@
 .home-container {
-  width: 100%;
   display: flex;
-  min-height: 100vh;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.thq-button-filled.hero-button1 {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.thq-button-filled.hero-button1:hover {
+  background-color: #0056b3;
+}
+
+/* Specific styles for the button container in the hero section */
+.hero-button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  justify-content: center; /* Center align buttons */
+  align-items: center; /* Center align buttons vertically */
+  margin-top: 20px; /* Add some space above the buttons */
+}
+
+.hero-button-container .button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.hero-button-container .button.secondary {
+  background-color: #6c757d; /* Different background color for secondary action */
+}
+
+.hero-button-container .button:hover {
+  background-color: #0056b3;
+}
+
+.hero-button-container .button.secondary:hover {
+  background-color: #5a6268; /* Different hover color for secondary action */
 }
